@@ -90,34 +90,34 @@ after High Rehab.
 ## After Rehab Value
 - Current Value
     - [Zillow](https://www.zillow.com/homedetails/548-W-Delhi-Rd-Ann-Arbor-MI-48103/54800224_zpid/): 434,000
-- Low
+- Low Rehab
     - 5 years of net operating income (13,500) + current value (434,000) =
       447,500
     - 10 years of net operating income (27,000) + current value (434,000) = 
       461,000
-- Medium
+- Medium Rehab
     - 5 years of net operating income (68,250) + current value (434,000) =
       502,250
     - 10 years of net operating income (136,500) + current value (434,000) = 
       570,500
-- High
+- High Rehab
     - 5 years of net operating income (109,110) + current value (434,000) =
       543,110
     - 10 years of net operating income (218,220) + current value (434,000) = 
       652,220
 
 ## Cash on Cash Return
-- Low
+- Low Rehab
     - Cash investment: 4,300-19,000
     - Change in equity: 434,000 - 347,200 = 86,800
     - Time elapsed: 2 months
     - Return: 4.6-20x Cash Investment 
-- Medium
+- Medium Rehab
     - Cash investment: 22,300-37,000
     - Change in equity: 502,250 - 347,200 = 155,050
     - Time elapsed: 4 months
     - Return: 4-7x Cash Investment 
-- High
+- High Rehab
     - Cash investment: 72,300-87,000
     - Change in equity: 543,100- 347,200 = 195,910
     - Time elapsed: 12 months
