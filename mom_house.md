@@ -1,7 +1,7 @@
 # Barbara House Investment
 
 ## Summary
-548 W Delhi Rd. has expenses of 1,600/month. With a minimal investment (carpet,
+548 W Delhi Rd. has expenses of 1,614/month. With a minimal investment (carpet,
 paint, driveway)  and a few months time, I could rent it out on Airbnb for 
 912/month. With a more extensive investment (new kitchen, bath, deck), I
 could rent it out for 2,737.50/month. Additionally, if we convert the garage in
@@ -40,8 +40,8 @@ Lynn's collateral.
     - Only makes sense after High Rehab
 
 
-- Monthly: 1,600
-- Yearly: 20,000
+- Monthly: 1,614
+- Yearly: 19,368
 
 
 
@@ -75,16 +75,16 @@ after High Rehab.
       manage everything after. 
 - Light Rehab: 4br\*20/night\*365 nights\*0.75 occupancy\*0.5 prop_man/12 months 
   = 912/month
-    - net operating income: -688/month (912 - 1600 )
+    - net operating income: -702/month (912 - 1,614 )
 - Low Rehab: 4br\*40/night\*365 nights\*0.75 occupancy\*0.5 prop_man/12 months 
   = 1,825/month
-    - net operating income: 225/month (1825 - 1600)
+    - net operating income: 211/month (1825 - 1,614)
 - Medium Rehab: 4br\*60/night\*365 nights\*0.75 occupancy\*0.5 prop_man/12 months 
   = 2,737.50/month
-    - net operating income: 1,137.50/month (2737.5 - 1600)
+    - net operating income: 1,124/month (2737.5 - 1,614)
 - High Rehab: 5br\*80/night\*365 nights\*0.75 occupancy\*0.5 prop_man/12 months 
   = 4,562.50/month
-    - net operating income: 1,818.50/month (4562.5 - 1600 - 1144 cleaning)
+    - net operating income: 1,805/month (4562.5 - 1,614 - 1144 cleaning)
 
 
 ## After Rehab Value
@@ -126,6 +126,6 @@ after High Rehab.
 ## Conclusion
 The only sticking point right now is getting my mom out of the house. If we
 could get her set up in Pittsburgh, I think she would agree to leave.
-Currently, the house is returing -1,600/month. Within two months, I think we could
-get it down to a return of -688/month. Within 4 months, we could get it to
-+225/month. Within a year, we could get it to +1,818.50/month
+Currently, the house is returing -1,614/month. Within two months, I think we could
+get it down to a return of -702/month. Within 4 months, we could get it to
++211/month. Within a year, we could get it to +1,804/month
