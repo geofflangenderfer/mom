@@ -3,8 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns; sns.set()
 
 condition = ['Light Rehab', 'Low Rehab', 'Medium Rehab', 'High Rehab']
-revenue = [912, 1825, 2737.5, 4562.5]
-expenses = [1613.67, 1613.67, 1613.67, 2757.67]
+revenue = [0, 912.5, 1825, 3650]
+expenses = [1613.67, 1613.67, 1613.67, 2757.67]+608.33
 barWidth = .25
 
 r1=np.arange(4)

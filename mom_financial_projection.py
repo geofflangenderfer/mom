@@ -3,10 +3,11 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # monthly income
-garage = 0
-house = 80*365/12
-vacancy = -.25 * (garage + house)
-property_management =  -.5 * (garage + house)
+garage =0
+house = 4*60*365/12
+vacancy = -.15 * (garage + house) if (garage+house) > 0 else 0
+property_management =  -.5 * (garage + house) if (garage+house) > 0 else 0
+mom_rent = -800 if (garage+house) > 0 else 0
 
 # monthly expenses
 tax = 432
@@ -22,16 +23,16 @@ repairs = 100
 mortgage = 762.15
 
 # build dataframe
-col1 =    ['Income', 'Income', 'Income', 'Income', 
+col1 =    ['Income', 'Income', 'Income', 'Income', 'Income',
            'Expenses', 'Expenses', 'Expenses', 'Expenses',
            'Expenses', 'Expenses', 'Expenses', 'Expenses',
            'Expenses', 'Expenses', 'Expenses']
            
-col2 =     ['Garage', 'House', 'Vacancy', 'Property Management',
+col2 =     ['Garage', 'House', 'Vacancy', 'Property Management', 'Mom Rent',
            'Tax', 'Insurance', 'Electric', 'Water', 
            'Sewer','Garbage', 'Gas', 'Lawn',
            'Snow', 'Repairs', 'Mortgage']
-values = [garage, house, vacancy, property_management, tax, insurance, 
+values = [garage, house, vacancy, property_management, mom_rent, tax, insurance, 
           electric, water, sewer, garbage, gas, lawn, snow, repairs, mortgage] 
 #tuples = list(zip(*arrays))
 #index = pd.MultiIndex.from_tuples(tuples)
@@ -41,6 +42,7 @@ data.columns = ['Type1', 'Type2', 'Values']
 print(data)
 
 data.to_csv('house.csv', index=False)
+print(data.groupby('Type1').sum())
 ## monthly cash flow
 #total_monthly_cashflow = total_monthly_income_current - total_monthly_expenses
 #

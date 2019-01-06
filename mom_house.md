@@ -1,11 +1,14 @@
 # Barbara House Investment
 
 ## Summary
-548 W Delhi Rd. has expenses of 1,614/month. With a minimal investment (carpet,
-paint, driveway)  and a few months time, I could rent it out on Airbnb for 
-912/month. With a more extensive investment (new kitchen, bath, deck), I
-could rent it out for 2,737.50/month. Additionally, if we convert the garage in
-addition to previous improvements, I project rent of 4,562.50/month. 
+548 W Delhi Rd. has expenses of 1,614/month. With a minimal investment
+(garbage, steam-carpets, sheets/comforters) and a few months time, I could break 
+even renting it out on Airbnb after accounting for rent for my mom in a new place. 
+With a light investment (carpet, paint, driveway), I could rent it and reduce
+monthly expenses to 1005/month. With a medium investment (new kitchen, bath,
+deck), I could flip net income positive to 187/month. Finally, with a high 
+investment, we convert the garage in addition to previous improvements, 
+I project positive monthly cash flow of 820/month.
 
 The only sticking point is getting my mom set up with a place in Pittsburgh, 
 which she's expressed interest in for music school. If you have a vacant apartment
@@ -46,18 +49,23 @@ Lynn's collateral.
 
 
 ## Rehab
+- Light
+    - garbage removal from house: 1000
+    - steam-clean carpets: 200
+    - new sheets, comforters: 200
 - Low
+    - Light: 1400
     - Carpets: 2,000
     - Paint: 1,000
     - Sewer: 300-15,000
     - Driveway: 1,000
 - Medium
-    - Low: 4,300-19,000
+    - Low: 5,700-20,400
     - Kitchen: 5,000
     - Bathrooms: 8,000
     - Deck: 5,000
 - High
-    - Medium: 22,300-37,000
+    - Medium: 23,700-38,400
     - Garage: 50,000
 
 
@@ -68,26 +76,33 @@ condition, 40/night after Low Rehab, 60/night after Medium Rehab, and 80/night
 after High Rehab. 
 
 ## Cash Flow
-- Two Income Expenses: vacancy and property management
+- Three Income Expenses: vacancy and property management
     - using 25% vacancy is conservative. I've seen a range of 0-50% vacancy
       rates.
     - I will ask for 1/2 of monthly revenue to get the house cleaned up and
       manage everything after. 
+    - Rent for my mom to live elsewhere: ~900/month
 - Light Rehab: 4br\*20/night\*365 nights\*0.75 occupancy\*0.5 prop_man/12 months 
-  = 912/month
-    - net operating income: -702/month (912 - 1,614 )
+               - 912.5 mom_rent/month
+               = 0/month
+    - net operating income: -1614/month (0 - 1,614 )
 - Low Rehab: 4br\*40/night\*365 nights\*0.75 occupancy\*0.5 prop_man/12 months 
-  = 1,825/month
-    - net operating income: 211/month (1825 - 1,614)
+             - 912.5 mom_rent/month
+             = 912.5/month
+    - net operating income: -701.5/month (912.5 - 1,614)
 - Medium Rehab: 4br\*60/night\*365 nights\*0.75 occupancy\*0.5 prop_man/12 months 
-  = 2,737.50/month
-    - net operating income: 1,124/month (2737.5 - 1,614)
+             - 912.5 mom_rent/month
+             = 1825/month
+    - net operating income: 211/month (1825 - 1,614)
 - High Rehab: 5br\*80/night\*365 nights\*0.75 occupancy\*0.5 prop_man/12 months 
-  = 4,562.50/month
-    - net operating income: 1,805/month (4562.5 - 1,614 - 1144 cleaning)
+             - 912.5 mom_rent/month
+             = 3650/month
+    - net operating income: 892/month (3650 - 1,614 - 1144 cleaning)
 
 
 ## After Rehab Value
+- I exclude mom_rent from operating income here because a new owner wouldn't
+  have to pay it.
 - Current Value
     - [Zillow](https://www.zillow.com/homedetails/548-W-Delhi-Rd-Ann-Arbor-MI-48103/54800224_zpid/): 434,000
 - Low Rehab
@@ -108,17 +123,17 @@ after High Rehab.
 
 ## Cash on Cash Return
 - Low Rehab
-    - Cash investment: 4,300-19,000
+    - Cash investment: 5,200-19,900
     - Change in equity: 434,000 - 347,200 = 86,800
     - Time elapsed: 2 months
     - Return: 4.6-20x Cash Investment 
 - Medium Rehab
-    - Cash investment: 22,300-37,000
+    - Cash investment: 23,200-37,900
     - Change in equity: 502,250 - 347,200 = 155,050
     - Time elapsed: 4 months
     - Return: 4-7x Cash Investment 
 - High Rehab
-    - Cash investment: 72,300-87,000
+    - Cash investment: 73,200-87,900
     - Change in equity: 543,100- 347,200 = 195,910
     - Time elapsed: 12 months
     - Return: 2.25-2.70x Cash Investment 
