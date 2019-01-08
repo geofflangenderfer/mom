@@ -3,44 +3,55 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 # monthly income
-garage =0
-house = 4*60*365/12
-vacancy = -.15 * (garage + house) if (garage+house) > 0 else 0
-property_management =  -.5 * (garage + house) if (garage+house) > 0 else 0
-mom_rent = -800 if (garage+house) > 0 else 0
+scenarios = [(0,0,4,0,0), (0,0,4,20,.25), (0,0,4,40,.15),
+             (0,0,4,70,.125), (1, 80, 4, 70,.125)]
+scenes=[]
+for bdr_g, p_g, bdr_h, p_h, vac in scenarios:
+    entry = [bdr_g, p_g, bdr_h, p_h, vac]
+    garage =bdr_g*p_g*365/12
+    house = bdr_h*p_h*365/12
+    vacancy = -vac * (garage + house) 
+    property_management =  -.5 * (garage + house + vacancy) 
+    mom_rent = -600 if (garage+house) > 0 else 0
 
-# monthly expenses
-tax = 432
-insurance = 125
-electric = 94.52 # avg. monthly utility bill for MI
-water = 0
-sewer = 0
-garbage = 0 
-gas = 0
-lawn = 100*9/12
-snow = 100*3/12
-repairs = 100
-mortgage = 762.15
+    # monthly expenses
+    tax = 432
+    insurance = 125
+    electric = 94.52 # avg. monthly utility bill for MI
+    water = 0
+    sewer = 0
+    garbage = 0 
+    gas = 0
+    lawn = 100*9/12
+    snow = 100*3/12
+    repairs = 100
+    mortgage = 762.15
 
-# build dataframe
-col1 =    ['Income', 'Income', 'Income', 'Income', 'Income',
-           'Expenses', 'Expenses', 'Expenses', 'Expenses',
-           'Expenses', 'Expenses', 'Expenses', 'Expenses',
-           'Expenses', 'Expenses', 'Expenses']
-           
-col2 =     ['Garage', 'House', 'Vacancy', 'Property Management', 'Mom Rent',
-           'Tax', 'Insurance', 'Electric', 'Water', 
-           'Sewer','Garbage', 'Gas', 'Lawn',
-           'Snow', 'Repairs', 'Mortgage']
-values = [garage, house, vacancy, property_management, mom_rent, tax, insurance, 
-          electric, water, sewer, garbage, gas, lawn, snow, repairs, mortgage] 
-#tuples = list(zip(*arrays))
-#index = pd.MultiIndex.from_tuples(tuples)
+    # build dataframe
+    col1 =    ['Income', 'Income', 'Income', 'Income', 'Income',
+            'Expenses', 'Expenses', 'Expenses', 'Expenses',
+            'Expenses', 'Expenses', 'Expenses', 'Expenses',
+            'Expenses', 'Expenses', 'Expenses']
+            
+    col2 =     ['Garage', 'House', 'Vacancy', 'Property Management', 'Mom Rent',
+            'Tax', 'Insurance', 'Electric', 'Water', 
+            'Sewer','Garbage', 'Gas', 'Lawn',
+            'Snow', 'Repairs', 'Mortgage']
+    values = [garage, house, vacancy, property_management, mom_rent, tax, insurance, 
+            electric, water, sewer, garbage, gas, lawn, snow, repairs, mortgage] 
+    #tuples = list(zip(*arrays))
+    #index = pd.MultiIndex.from_tuples(tuples)
 
-data = pd.DataFrame([col1, col2, values]).T
-data.columns = ['Type1', 'Type2', 'Values']
-print(data)
+    data = pd.DataFrame([col1, col2, values]).T
+    data.columns = ['Type1', 'Type2', 'Values']
+    print(data)
 
+    entry.extend(data.groupby('Type1').sum().Values.values)
+    entry.append(np.sum(entry[-1] - entry[-2]))
+    scenes.append(entry)
+columns = ['bdr_g', 'p_g', 'bdr_h', 'p_h', 
+           'vac', 'expenses', 'revenue','income'] 
+pd.DataFrame(scenes, columns = columns).to_csv('scenarios.csv', index=False)
 data.to_csv('house.csv', index=False)
 print(data.groupby('Type1').sum())
 ## monthly cash flow

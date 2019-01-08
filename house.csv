@@ -1,9 +1,9 @@
 Type1,Type2,Values
-Income,Garage,0
-Income,House,7300.0
-Income,Vacancy,-1095.0
-Income,Property Management,-3650.0
-Income,Mom Rent,-800
+Income,Garage,2433.3333333333335
+Income,House,8516.666666666666
+Income,Vacancy,-1368.75
+Income,Property Management,-4790.625
+Income,Mom Rent,-600
 Expenses,Tax,432
 Expenses,Insurance,125
 Expenses,Electric,94.52

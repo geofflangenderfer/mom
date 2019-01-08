@@ -49,22 +49,22 @@ Lynn's collateral.
 
 
 ## Rehab
-- Light
+- Light (1 month)
     - garbage removal from house: 1000
     - steam-clean carpets: 200
     - new sheets, comforters: 200
-- Low
+- Low (1 month)
     - Light: 1400
     - Carpets: 2,000
     - Paint: 1,000
     - Sewer: 300-15,000
     - Driveway: 1,000
-- Medium
+- Medium (3 months)
     - Low: 5,700-20,400
     - Kitchen: 5,000
     - Bathrooms: 8,000
     - Deck: 5,000
-- High
+- High (6 months)
     - Medium: 23,700-38,400
     - Garage: 50,000
 
