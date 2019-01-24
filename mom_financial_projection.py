@@ -55,7 +55,7 @@ columns = ['bdr_g', 'p_g', 'bdr_h', 'p_h',
 pd.DataFrame(scenes, columns = columns).to_csv('scenarios.csv', index=False)
 data.to_csv('house.csv', index=False)
 #print(data.groupby('Type1').sum())
-monthly_cashflow = [ 12*x[-1] for x in scenes]
+monthly_cashflow = [ x[-1] for x in scenes]
 names = ['Status Quo', 'Light Rehab', 'Low Rehab', 'Medium Rehab', 
          'High Rehab']
 
@@ -63,10 +63,10 @@ fig, ax = plt.subplots()
 #fig.figsize=(15,15)
 ax.bar(names, monthly_cashflow, .35)
 ax.set_ylabel('$')
-ax.set_title('Yearly Cash Flow')
-plt.xticks(rotation=45)
+ax.set_title('Monthly Cash Flow')
+plt.xticks(rotation=15)
 plt.tight_layout()
-plt.savefig('yearly_cash_flow')
+plt.savefig('monthly_cash_flow')
 plt.show()
 ## monthly cash flow
 #total_monthly_cashflow = total_monthly_income_current - total_monthly_expenses
