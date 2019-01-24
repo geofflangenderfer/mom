@@ -65,8 +65,8 @@ ax.bar(names, monthly_cashflow, .35)
 ax.set_ylabel('$')
 ax.set_title('Yearly Cash Flow')
 plt.xticks(rotation=45)
-plt.savefig('yearly_cash_flow', dpi=150)
-fig.tight_layout()
+plt.tight_layout()
+plt.savefig('yearly_cash_flow')
 plt.show()
 ## monthly cash flow
 #total_monthly_cashflow = total_monthly_income_current - total_monthly_expenses
